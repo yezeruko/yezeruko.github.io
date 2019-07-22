@@ -90,6 +90,7 @@ canvas{
     color: rgb(0, 0, 0);
     font-size:18px;
     max-width: 400;
+    background-color: #d3e2ff;
 }
 
 .width60{
