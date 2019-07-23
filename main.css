@@ -61,14 +61,12 @@ canvas{
     #header03{display: none;}
 }
 
+/*@media (max-width: 900px) {
+    .box-container-right{display: none;}
+}*/
+
 .main_content {
     position: absolute;
-    /*top:0px;
-    padding-top: 60px;
-    padding-left: 50px;
-    padding-right: 50px;
-    left: 0;
-    right: 0;*/
     top: 0px;
     background-color:rgb(33, 56, 6,0);
     min-width: 700px;
@@ -88,7 +86,7 @@ canvas{
     float:left;
     padding-top:10px;
     padding-left:0px;
-    padding-right:0px;
+    padding-right:10px;
     padding-bottom:10px;
     background-color:rgb(255, 255, 255);
     border:0px solid rgb(255, 255, 255);
@@ -167,17 +165,13 @@ canvas{
   /*tooltip */
   .tooltip {
     visibility: hidden;
-    z-index: 1;
     opacity: 1.0;
-    /*width: 200px;*/
+    z-index: 1;
     padding: 0px 20px;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    position: absolute;
-    top:-100%;
-    left: -25%;
     border-radius: 5px;
-    font: 14px;
+    font: 60%;
     transform: translateY(9px);
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 3px rgba(56, 54, 54, 1);
@@ -197,18 +191,20 @@ canvas{
   .right:hover {transform: translateX(6px); }
   
   /*left*/
-  .left .tooltip{ top:-20%; left:-100%; }
+  .left .tooltip{ top:-115%; right:-100%;}
 
   /*bottom*/  
-  .bottom .tooltip { top:115%; left:-100%; }
+  .bottom .tooltip { top:-115%; left:100%;}
   
   /*right*/
-  .right .tooltip { top:-160%; left:100%; }
+  .right .tooltip { top:-160%; left:100%;}
 
-  .top .tooltip { top:-160%; left:0%; }
+  .top .tooltip { top:-160%; left:0%;}
 
 .centerImage {
     text-align:center;
-    padding-left:20%;
-    padding-top:10%;
+    padding: 10px 10px;
+    height: auto;
+    width: 100%;
+    border-radius: 25px;
 }
