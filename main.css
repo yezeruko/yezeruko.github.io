@@ -10,15 +10,14 @@ canvas{
     background-color:#ffffff;
     ;
 }
+
 #body {
-    display: flex;
+    /*display: flex;*/
     font-family: "Varela";
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
-    padding: 0 0px;
-    width: 100%;
 }
 
 #header {
@@ -32,14 +31,17 @@ canvas{
     right: 0;
     height: 40px; 
     background-color:rgb(6, 32, 56);
-    min-width: 700;
+    min-width: 700px;
+    --contentWidth: 1200px;
+    padding: 0 calc((100% - var(--contentWidth)) / 2);
 }
 
 #header01 {
+    padding-left:20px;
     padding-top:5px;
     color: rgb(255, 255, 255);
     font-size:25px;
-    text-indent: 50px;
+    text-indent: 0px;
 }
 #header02 {
     padding-top:15px;
@@ -61,17 +63,22 @@ canvas{
 
 .main_content {
     position: absolute;
-    top:0px;
+    /*top:0px;
     padding-top: 60px;
     padding-left: 50px;
     padding-right: 50px;
     left: 0;
-    right: 0;
+    right: 0;*/
+    top: 0px;
     background-color:rgb(33, 56, 6,0);
     min-width: 700px;
+    --contentWidth: 1200px;
+    padding: 60px calc((100% - var(--contentWidth)) / 2);
 }
 
 .big-box{
+    padding-left:20px;
+    padding-right:20px;
     margin-top: 25px; 
     width:100%;
     overflow:hidden;   
@@ -80,29 +87,35 @@ canvas{
 .box-container-white-left {
     float:left;
     padding-top:10px;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left:0px;
+    padding-right:0px;
     padding-bottom:10px;
     background-color:rgb(255, 255, 255);
-    border:1px solid rgb(255, 255, 255);
+    border:0px solid rgb(255, 255, 255);
     -webkit-border-radius: 5px;
     border-radius: 5px;
     color: rgb(0, 0, 0);
     font-size:18px;
     max-width: 400;
 }
+.width75{width:75%;}
 
-.width60{
-    width:60%;
-}
+.width65{width:65%;}
 
-.width50{
-    width:50%;
-}
+.width60{width:60%;}
 
-.width40{
-    width:40%;
-}
+.width50{width:50%;}
+
+.width40{width:40%;}
+
+.width35{width:35%;}
+
+.width30{width:30%;}
+
+.width25{width:25%;}
+
+.width700px{width:700px;}
+
 .box-container-right {
     float:right;
     padding-left:0px;
@@ -117,9 +130,9 @@ canvas{
 
 .wrapper01 {
     display: grid;
-    grid-template-columns: 35% 35%;
+    grid-template-columns: 45% 45%;
     grid-template-rows: 25% 15% 15% 15%;
-    grid-gap: 10px;
+    grid-gap: 15px;
     align-items: center;
     justify-content: center;
   }
