@@ -203,12 +203,21 @@ canvas{
 
   .top .tooltip { top:-160%; left:0%;}
 
-.centerImage {
+.centerImage01 {
     text-align:center;
     padding: 10px 0px;
     height: auto;
     width: 100%;
     border-radius: 25px;
+}
+
+.centerImage02 {
+    padding: 30px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: auto;
 }
 
 .title01 {
