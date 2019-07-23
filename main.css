@@ -43,12 +43,14 @@ canvas{
     font-size:25px;
     text-indent: 0px;
 }
+
 #header02 {
     padding-top:15px;
     color: rgb(200, 200, 200);
     font-size: 15px;
     text-indent: 100px;
 }
+
 #header03 {
     padding-top:15px;
     color: rgb(200, 200, 200);
@@ -80,6 +82,7 @@ canvas{
     margin-top: 25px; 
     width:100%;
     overflow:hidden;   
+    font-size:18px;
 }
 
 .box-container-white-left {
@@ -152,7 +155,6 @@ canvas{
     color: #fff;    
   }
 
-
 /*tooltip Box*/
 .con-tooltip {
     position: relative;
@@ -203,8 +205,15 @@ canvas{
 
 .centerImage {
     text-align:center;
-    padding: 10px 10px;
+    padding: 10px 0px;
     height: auto;
     width: 100%;
     border-radius: 25px;
+}
+
+.title01 {
+    padding-left:0px;
+    color: rgb(0, 0, 0);
+    font-size:30px;
+    font-weight: bold;
 }
